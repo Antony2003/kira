@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+</head>
+<body>
+    <h1>LOGIN PAGE</h1>
+    <form class="box" action="log.html" method="POST">
+        <label for="Username"  >Username:</label>
+        <input id="Username" type="text" >
+        <label for="pas" >Password:</label>
+        <input id="pas" type="password" ><br>
+        
+    </form>
+    <input id="in" type="submit" value="login" onclick="validate()"><br>
+    <a href="https://www.instagram.com/kavithaiyum.isaiyum/" target="_blank">Kira</a>
+    <style>
+        h1{
+            position: absolute;
+            
+            left: 40%;
+            text-align: center;
+            color: rgb(255, 0, 166);
+            top: 10%;
+
+        }
+        body{
+            background-image: url("greengrey.jpg");
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            
+            background-size: cover;
+            
+
+            
+            
+            
+        }
+        #in{
+            position: absolute;
+            
+            left: 60%;
+            text-align: center;
+            color: black;
+            top: 60%;
+        }
+        
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            text-align: center;
+            color: lime;
+            
+        }
+
+    </style>
+    <script>
+        function validate()
+        {
+            var us = document.getElementById("Username").value;
+            var pa = document.getElementById("pas").value;
+            if(us =="kira" && pa=="10")
+            {
+                window.location = "index.html";
+            }
+            else
+            {
+                alert("Enter correct username and password");
+                return false;
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
